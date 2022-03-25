@@ -24,8 +24,8 @@ const Swiper2 = new Swiper(".idc-swiper2", {
     // Default parameters
     loop: false,
     direction: "horizontal",
-    slidesPerView: 3,
-    spaceBetween: 25,
+    slidesPerView: 1,
+    spaceBetween: 15,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     touchReleaseOnEdges: true,
@@ -36,6 +36,21 @@ const Swiper2 = new Swiper(".idc-swiper2", {
     navigation: {
         nextEl: ".idc-swiper2 .idc-swiper-button-next",
         prevEl: ".idc-swiper2 .idc-swiper-button-prev",
+    },
+
+    breakpoints: {
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+        },
+        1020: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1340: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+        },
     },
 });
 const Swiper3 = new Swiper(".idc-swiper3", {
